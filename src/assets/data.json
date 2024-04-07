@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Eid-ul-Fitr",
+        "date": "11 April, 2024",
+        "time": "6:00 am",
+        "description": "",
+        "location": "Worldwide",
+        "img": ""
+    },
+    {
+        "id": 2,
+        "name": "3rd Year 1st Semester Exam",
+        "date": "1 May, 2024",
+        "time": "10:00 am",
+        "description": "",
+        "location": "Sust, Sylhet",
+        "img": ""
+    },
+    {
+        "id": 3,
+        "name": "Eid-ul-Adha",
+        "date": "15 June, 2024",
+        "time": "6:00 pm",
+        "description": "",
+        "location": "Worldwide",
+        "img": ""
+    }
+]

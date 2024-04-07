@@ -1,7 +1,7 @@
 import { Button, Form, Input } from "antd";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addEvent } from "../features/events/eventSlice";
+import { addEvent } from "../../features/events/eventSlice";
 
 const AddEvents = () => {
   const [text, setText] = useState("");

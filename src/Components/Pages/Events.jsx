@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeEvent } from "../features/events/eventSlice";
+import { removeEvent } from "../../features/events/eventSlice";
 
 const Events = () => {
   const dispatch = useDispatch();
