@@ -29,7 +29,7 @@ const EventDetails = () => {
         <p className="margin_bottom">Location: {datas?.location}</p>
         <article className="margin_bottom">{datas?.description}</article>
         <iframe
-          className="margin_bottom"
+          className="margin_bottom map"
           src={datas?.src}
           width="600"
           height="450"
