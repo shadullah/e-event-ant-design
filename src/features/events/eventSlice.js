@@ -1,14 +1,15 @@
-import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk, nanoid } from "@reduxjs/toolkit";
 
 const initialState = {
-  events: [
-    {
-      id: 1,
-      title: "Redux Here Online",
-      location: "Dhaka",
-    },
-  ],
+  isLoading: false,
+  data: [],
+  error: false,
 };
+
+export const fetchEvent = createAsyncThunk("fetchEvent", async () => {
+  const data = await fetch("/data.json");
+  return data.json();
+});
 
 export const eventSlice = createSlice({
   name: "event",
@@ -18,16 +19,28 @@ export const eventSlice = createSlice({
       const { text, location } = action.payload;
       const event = {
         id: nanoid(),
-        title: text,
+        name: text,
         location: location,
       };
-      state.events.push(event);
+      state.data.push(event);
     },
     removeEvent: (state, action) => {
       state.events = state.events.filter(
         (event) => event.id !== action.payload
       );
     },
+  },
+  extraReducers: (builder) => {
+    builder.addCase(fetchEvent.pending, (state) => {
+      state.isLoading = true;
+    });
+    builder.addCase(fetchEvent.fulfilled, (state, action) => {
+      state.isLoading = false;
+      state.data = action.payload;
+    });
+    builder.addCase(fetchEvent.rejected, (state) => {
+      state.error = true;
+    });
   },
 });
 

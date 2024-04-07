@@ -10,6 +10,9 @@ body{
     font-style: normal;
   }
 
+  
+  
+
 @media (max-width:500px){
     .header{
         display: none;
@@ -21,3 +24,4 @@ body{
         display: none;
     }
 }
+

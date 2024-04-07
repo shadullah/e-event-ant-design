@@ -12,7 +12,7 @@ const Navbar = () => {
   const [openMenu, setOpen] = useState(false);
 
   return (
-    <div>
+    <div className="navbar">
       <div
         style={{ height: 60, paddingLeft: "12px", paddingTop: "12px" }}
         className="menuIcon"
@@ -22,6 +22,7 @@ const Navbar = () => {
             setOpen(true);
           }}
         />
+        <span className="title">E-Event</span>
       </div>
       <span className="header">
         <AppMenu setOpen={setOpen} />
@@ -41,6 +42,11 @@ const Navbar = () => {
 
 function AppMenu({ isInline = false, setOpen }) {
   const items = [
+    {
+      label: "E-Event",
+      key: "e-event",
+      link: "/",
+    },
     {
       label: "Home",
       key: "/",

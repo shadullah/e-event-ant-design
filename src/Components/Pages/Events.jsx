@@ -1,20 +1,34 @@
 import { useDispatch, useSelector } from "react-redux";
-import { removeEvent } from "../../features/events/eventSlice";
+import { fetchEvent, removeEvent } from "../../features/events/eventSlice";
+import { useEffect } from "react";
 
 const Events = () => {
   const dispatch = useDispatch();
-  const events = useSelector((state) => state.events);
+
+  const data = useSelector((state) => state.event.data);
+  useEffect(() => {
+    dispatch(fetchEvent());
+  }, []);
+
+  console.log(data);
 
   return (
     <>
       <h1>Events</h1>
       <div>
-        {events.map((event) => (
+        {/* {data.isLoading ? (
+          <h1>Loading.....</h1>
+        ) : (
+          data?.data?.map((event) => {
+            return <p key={event.id}>{event.name}</p>;
+          })
+        )} */}
+        {data?.map((event) => (
           <div
             style={{ width: "300px", margin: "20px", padding: "10px" }}
             key={event.id}
           >
-            <h2>{event.title}</h2>
+            <h2>{event.name}</h2>
             <div
               style={{
                 display: "flex",
