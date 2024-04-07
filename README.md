@@ -4,11 +4,10 @@ E-event is an event management website built using React, JavaScript, Ant Design
 
 ## Installation
 
-<div style="background-color: #f0f0f0; padding: 20px;">
 To install the necessary dependencies, run:
 
+<div style="background-color: #f0f0f0; padding: 20px;">
 npm install
-
 </div>
 
 ## Running the Project
