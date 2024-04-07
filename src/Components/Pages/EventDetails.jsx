@@ -27,7 +27,15 @@ const EventDetails = () => {
         <b className="margin_bottom">Time: {datas?.time}</b>
         <p className="margin_bottom">Date: {datas?.date}</p>
         <p className="margin_bottom">Location: {datas?.location}</p>
-        <article>{datas?.description}</article>
+        <article className="margin_bottom">{datas?.description}</article>
+        <iframe
+          className="margin_bottom"
+          src={datas?.src}
+          width="600"
+          height="450"
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

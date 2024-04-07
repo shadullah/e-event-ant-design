@@ -44,7 +44,7 @@ const Navbar = () => {
 function AppMenu({ isInline = false, setOpen }) {
   const items = [
     {
-      label: "E-Event",
+      label: "Local Event Planner",
       key: "e-event",
       link: "/",
     },
