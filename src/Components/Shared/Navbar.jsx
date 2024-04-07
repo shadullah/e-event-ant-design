@@ -2,9 +2,15 @@ import { Drawer, Menu } from "antd";
 import { useState } from "react";
 import { MenuOutlined } from "@ant-design/icons";
 import "../../App.css";
+import { Link } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
+import Home from "../Pages/Home/Home";
+import Events from "../Pages/Events";
+import AddEvents from "../Pages/AddEvents";
 
 const Navbar = () => {
   const [openMenu, setOpen] = useState(false);
+
   return (
     <div>
       <div
@@ -18,7 +24,7 @@ const Navbar = () => {
         />
       </div>
       <span className="header">
-        <AppMenu />
+        <AppMenu setOpen={setOpen} />
       </span>
       <Drawer
         placement="left"
@@ -26,14 +32,32 @@ const Navbar = () => {
         closable={false}
         onClose={() => setOpen(false)}
       >
-        <AppMenu isInline />
+        <AppMenu setOpen={setOpen} isInline />
       </Drawer>
+      <Content />
     </div>
   );
 };
 
-// eslint-disable-next-line react/prop-types
-function AppMenu({ isInline = false }) {
+function AppMenu({ isInline = false, setOpen }) {
+  const items = [
+    {
+      label: "Home",
+      key: "/",
+      link: "/",
+    },
+    {
+      label: "Events",
+      key: "/events",
+      link: "/events",
+    },
+    {
+      label: "Create Event",
+      key: "/create-event",
+      link: "/create-event",
+    },
+  ];
+
   return (
     <Menu
       style={{
@@ -45,21 +69,25 @@ function AppMenu({ isInline = false }) {
       }}
       theme="dark"
       mode={isInline ? "inline" : "horizontal"}
-      items={[
-        {
-          label: "Home",
-          key: "home",
-        },
-        {
-          label: "Events",
-          key: "events",
-        },
-        {
-          label: "Create Event",
-          key: "create-event",
-        },
-      ]}
-    ></Menu>
+    >
+      {items.map((item) => (
+        <Menu.Item key={item.key} onClick={() => setOpen(false)}>
+          <Link to={item.link}>{item.label}</Link>
+        </Menu.Item>
+      ))}
+    </Menu>
+  );
+}
+
+function Content() {
+  return (
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/create-event" element={<AddEvents />} />
+      </Routes>
+    </div>
   );
 }
 
