@@ -16,7 +16,7 @@ const Events = () => {
 
   return (
     <>
-      <h1 style={{ fontSize: "36px", textAlign: "center", margin: "20px" }}>
+      <h1 className="textcenter marginY" style={{ fontSize: "36px" }}>
         Events
       </h1>
       <Row style={{ margin: "24px" }} gutter={[12, 12]}>

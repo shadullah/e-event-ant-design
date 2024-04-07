@@ -24,10 +24,14 @@ const AddEvents = () => {
 
   return (
     <div>
-      <h1 style={{ textAlign: "center" }}>Add Event</h1>
+      <h1 className="textcenter marginY">Create Event</h1>
 
-      <Form onFinish={handleSubmit} style={{ width: "600px", margin: "auto" }}>
-        <Form.Item label="Event Title">
+      <Form
+        onFinish={handleSubmit}
+        className="form"
+        style={{ width: "600px", margin: "auto" }}
+      >
+        <Form.Item label="Event Name">
           <Input
             name={text}
             value={text}
@@ -45,8 +49,8 @@ const AddEvents = () => {
             required
           ></Input>
         </Form.Item>
-        <Form.Item>
-          <Button block type="primary" htmlType="submit">
+        <Form.Item className="textcenter">
+          <Button type="primary" htmlType="submit">
             Add Event
           </Button>
         </Form.Item>

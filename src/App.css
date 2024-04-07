@@ -13,17 +13,33 @@ body{
 .margin_bottom{
     margin-bottom: 16px;
 }
+
+.marginY{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.textcenter{
+    text-align: center;
+}
   
 
 @media (max-width:500px){
     .header{
         display: none;
     }
+    .image {
+        width: 100%;
+        max-width: 300px; 
+      }
 }
 
 @media (min-width: 500px ) {
     .menuIcon{
         display: none;
+    }
+    .image{
+        width: "300px";
     }
 }
 

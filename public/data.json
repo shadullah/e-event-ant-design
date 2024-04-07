@@ -9,6 +9,15 @@
         "img": "https://static.toiimg.com/thumb/msid-108871129,width-400,resizemode-4/108871129.jpg"
     },
     {
+        "id": 4,
+        "name": "Urban Night",
+        "date": "26 April, 2024",
+        "time": "5:00 pm",
+        "description": "We're thrilled to announce the arrival of Bollywood mega star singer Javed Ali & Pakistani pop sensation Abdul Hannan to Bangladesh for the 'Urban Night with 3 Nation' concert where they will be joining with Bangladeshi young & talented Ishaan Mozumder! 🎤✨ Mark your calendars on the date of April 26, 2024! 🗓️ Stay tuned to our pages Assen Buzz, Xirconium & ArcLight Events on Facebook for exciting updates and exclusive news!. 🎉",
+        "location": "Purbachal, Dhaka",
+        "img": "https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/434918036_911886824061035_4049380668204573982_n.jpg?stp=dst-jpg_p960x960&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEahbu58wYMQn5363wxqydYt8pp8rScYgG3ymnytJxiARTdOeC-5HNqHl4KWoss_k8DYT4KqG-8l7ClXb3ewgTk&_nc_ohc=omVMwbleUEMAb4dTsWw&_nc_ht=scontent.fdac152-1.fna&oh=00_AfDcHpEHpUQm5Bv8UYFrkeYlipQvTr-f6OMytOntP9eJZQ&oe=66188E31"
+    },
+    {
         "id": 2,
         "name": "3/1 Exam",
         "date": "1 May, 2024",
@@ -25,5 +34,23 @@
         "description": "Eid ul-Adha celebrates the time when Ibrahim had a dream which he believed was a message from Allah asking him to sacrifice his son Isma'il as an act of obedience to God.The devil tempted Ibrahim by saying he should disobey Allah and spare his son. As Ibrahim was about to kill his son, Allah stopped him and gave him a lamb to sacrifice instead.",
         "location": "Worldwide",
         "img": "https://www.timeoutdubai.com/cloud/timeoutdubai/2023/07/27/eiddd.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Space Exploration",
+        "date": "20 April, 2024",
+        "time": "11:00 pm",
+        "description": "Space Exploration Olympiad (SEO) 2023 is a unique opportunity for students between the ages of 6-14 years to showcase their knowledge and skills in STEAM+C education. This program is being organized by the Bangladesh Innovation Forum and Space Innovation Camp, Powered by ACI Pure Salt to promote and encourage young students to take an interest in space and science-related fields.",
+        "location": "National Museum of Science & Technology, Bangladesh",
+        "img": "https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/395263376_343785471661740_838571569683031074_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHGkViKDXc6_K4amdypWELVZBSr3H8SUfdkFKvcfxJR929-6hzW44vOrs0gPxWBhXJn8SQEkI21CsqVoAeN5Mru&_nc_ohc=XnDHBxhjtsMAb5FLjZ5&_nc_ht=scontent.fdac152-1.fna&oh=00_AfBxcnNy2TcLFQMs5Q7tLw6Pu6kumRcGQ4tRORBwXPYMrQ&oe=6618A1F7"
+    },
+    {
+        "id": 6,
+        "name": "ICT Division TechFest",
+        "date": "25 April, 2024",
+        "time": "9:00 am",
+        "description": "DRMC IT CLUB proudly unveils the grandest tech event of the year - ICT Division Presents 7th DRMC International Tech Carnival 2024! From April 25th to 27th, experience a captivating fusion of brilliance and innovation, meticulously crafted to fuel the passion of tech enthusiasts nationwide. This grand tech extravaganza promises mind-expanding experiences that redefine the boundaries of possibility 🚀",
+        "location": "DRMC, Mohammadpur, Dhaka",
+        "img": "https://scontent.fdac152-1.fna.fbcdn.net/v/t39.30808-6/430887619_712458957710691_8297427498004679157_n.jpg?stp=dst-jpg_p960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFXpKcZ8eKUK6Bipm82GQwggoekJzcU40qCh6QnNxTjSudId7Xk_-SJ4mHIn3EcgFJT95Z5DF9nqofMgFsG6t5G&_nc_ohc=KDhQRbdlTMwAb6tF5LK&_nc_ht=scontent.fdac152-1.fna&oh=00_AfBSOEATkxClnCuAiJBPYshP49x_Wl_5MQmpoz4xDRaf1Q&oe=661876DD"
     }
 ]
