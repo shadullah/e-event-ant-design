@@ -1,6 +1,6 @@
-# React + Vite
+# E-event is a event management website
+Technology Used: React, JavaScript, Ant-design, React-Redux, Redux-toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
 
