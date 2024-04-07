@@ -25,9 +25,7 @@ export const eventSlice = createSlice({
       state.data.push(event);
     },
     removeEvent: (state, action) => {
-      state.events = state.events.filter(
-        (event) => event.id !== action.payload
-      );
+      state.data = state.data.filter((event) => event.id !== action.payload);
     },
   },
   extraReducers: (builder) => {

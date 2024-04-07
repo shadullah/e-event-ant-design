@@ -1,6 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
-import { fetchEvent, removeEvent } from "../../features/events/eventSlice";
+import { fetchEvent } from "../../features/events/eventSlice";
 import { useEffect } from "react";
+import EventsAll from "./EventsAll";
+import { Col, Row } from "antd";
 
 const Events = () => {
   const dispatch = useDispatch();
@@ -14,45 +16,17 @@ const Events = () => {
 
   return (
     <>
-      <h1>Events</h1>
-      <div>
-        {/* {data.isLoading ? (
-          <h1>Loading.....</h1>
-        ) : (
-          data?.data?.map((event) => {
-            return <p key={event.id}>{event.name}</p>;
-          })
-        )} */}
+      <h1 style={{ fontSize: "36px", textAlign: "center", margin: "20px" }}>
+        Events
+      </h1>
+      <Row style={{ margin: "24px" }} gutter={[16, 16]}>
         {data?.map((event) => (
-          <div
-            style={{ width: "300px", margin: "20px", padding: "10px" }}
-            key={event.id}
-          >
-            <h2>{event.name}</h2>
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-              }}
-            >
-              <p>Location: {event.location}</p>
-              <button
-                style={{
-                  width: "30px",
-                  height: "30px",
-                  backgroundColor: "orange",
-                  fontWeight: "bolder",
-                  border: "none",
-                }}
-                onClick={() => dispatch(removeEvent(event.id))}
-              >
-                X
-              </button>
-            </div>
-          </div>
+          <Col key={event.id} xs={24} sm={24} md={12} lg={6}>
+            {" "}
+            <EventsAll event={event}></EventsAll>
+          </Col>
         ))}
-      </div>
+      </Row>
     </>
   );
 };

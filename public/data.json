@@ -4,26 +4,26 @@
         "name": "Eid-ul-Fitr",
         "date": "11 April, 2024",
         "time": "6:00 am",
-        "description": "",
+        "description": "Eid-ul-Fitr is a joyous occasion celebrated by Muslims across the globe. It is believed that the Holy Quran was first revealed to Prophet Muhammad during Ramadan. This history can be traced back to 624 AD. Muslims believe the month-long fasting during Ramadan brings prosperity, harmony, and peace. They refrain from any negative thoughts during this period. Come Eid-ul-Fitr, which marks the end of Ramadan, people break their Roza with a delicious meal and get together with friends and family. Eid-al-Fitr also marks the Prophet's triumph in the Battle of Badr. Meanwhile, Eid-al-Fitr means Festival of breaking the fast. On this day, people wear new clothes, prepare delicacies, do charity and wish their family and friends Eid Mubarak. They break the Roza with a delicious meal. Meanwhile, the delectable dishes prepared during Eid are Biryani, Haleem, Nihari, kebabs and Seviyan. Additionally, children receive gifts and money from elders, called Eidi.",
         "location": "Worldwide",
-        "img": ""
+        "img": "https://static.toiimg.com/thumb/msid-108871129,width-400,resizemode-4/108871129.jpg"
     },
     {
         "id": 2,
-        "name": "3rd Year 1st Semester Exam",
+        "name": "3/1 Exam",
         "date": "1 May, 2024",
         "time": "10:00 am",
-        "description": "",
+        "description": "A key element of the examination system is to ensure that a ‘level playing field’ exists for all candidates. This includes a process which provides special consideration to any candidate who has temporarily experienced illness, injury or some other event outside of their control at the time of the examination or assessment. It is applied when the issue or event has had, or is reasonably likely to have had, a material effect on a candidate’s ability to take an assessment or demonstrate his or her normal level of attainment in an assessment. The special consideration process cannot remove the difficulty faced by the candidate, but it can go some way to assist a candidate affected by a potentially wide range of difficulties, emotional or physical, which may influence performance in their examinations. However, the process does not cover all scenarios, and there may be some instances where it is more appropriate for the candidate not to be entered for the examination.",
         "location": "Sust, Sylhet",
-        "img": ""
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJXYVxr94QLFIcL1BfJrVl5P4R4iSP4V64fQBO8-w0dg&s"
     },
     {
         "id": 3,
         "name": "Eid-ul-Adha",
         "date": "15 June, 2024",
         "time": "6:00 pm",
-        "description": "",
+        "description": "Eid ul-Adha celebrates the time when Ibrahim had a dream which he believed was a message from Allah asking him to sacrifice his son Isma'il as an act of obedience to God.The devil tempted Ibrahim by saying he should disobey Allah and spare his son. As Ibrahim was about to kill his son, Allah stopped him and gave him a lamb to sacrifice instead.",
         "location": "Worldwide",
-        "img": ""
+        "img": "https://www.timeoutdubai.com/cloud/timeoutdubai/2023/07/27/eiddd.jpg"
     }
 ]
