@@ -1,8 +1,33 @@
-# E-event is a event management website
-Technology Used: React, JavaScript, Ant-design, React-Redux, Redux-toolkit
+# E-event
 
+E-event is an event management website built using React, JavaScript, Ant Design, React-Redux, and Redux Toolkit.
 
-Currently, two official plugins are available:
+## Installation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To install the necessary dependencies, run:
+
+npm install
+
+## Running the Project
+
+To run the project, use the following command:
+
+npm run dev
+
+## Features
+
+1. **Responsive Navbar:** A responsive navigation bar is implemented using Ant Design, providing easy access to different sections of the website.
+   
+2. **Adding Events:** Users can add new events to the website, providing details such as event title and location.
+   
+3. **List of Events:** The website displays a list of events retrieved from dummy data, allowing users to browse through upcoming events.
+   
+4. **Event Details:** Users can view detailed information about each event, including its title, location, and other relevant details.
+
+## Technologies Used
+
+- React
+- JavaScript
+- Ant Design
+- React-Redux
+- Redux Toolkit
