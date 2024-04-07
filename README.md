@@ -35,3 +35,4 @@ npm run dev
 - Ant Design
 - React-Redux
 - Redux Toolkit
+- Jest(for testing)
