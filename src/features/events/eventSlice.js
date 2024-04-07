@@ -4,6 +4,7 @@ const initialState = {
   isLoading: false,
   data: [],
   error: false,
+  searchQuery: "",
 };
 
 export const fetchEvent = createAsyncThunk("fetchEvent", async () => {
@@ -27,6 +28,9 @@ export const eventSlice = createSlice({
     removeEvent: (state, action) => {
       state.data = state.data.filter((event) => event.id !== action.payload);
     },
+    updateSearch: (state, action) => {
+      state.searchQuery = action.payload;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchEvent.pending, (state) => {
@@ -42,6 +46,6 @@ export const eventSlice = createSlice({
   },
 });
 
-export const { addEvent, removeEvent } = eventSlice.actions;
+export const { addEvent, removeEvent, updateSearch } = eventSlice.actions;
 
 export default eventSlice.reducer;

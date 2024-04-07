@@ -1,7 +1,6 @@
 import { Button } from "antd";
 import { useNavigate } from "react-router-dom";
 
-// eslint-disable-next-line react/prop-types
 const EventsAll = ({ event }) => {
   const { id, name, location, date, img } = event;
   const navigate = useNavigate();
