@@ -10,7 +10,9 @@ body{
     font-style: normal;
   }
 
-  
+.margin_bottom{
+    margin-bottom: 16px;
+}
   
 
 @media (max-width:500px){

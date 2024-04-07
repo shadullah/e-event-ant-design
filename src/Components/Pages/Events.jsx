@@ -19,7 +19,7 @@ const Events = () => {
       <h1 style={{ fontSize: "36px", textAlign: "center", margin: "20px" }}>
         Events
       </h1>
-      <Row style={{ margin: "24px" }} gutter={[16, 16]}>
+      <Row style={{ margin: "24px" }} gutter={[12, 12]}>
         {data?.map((event) => (
           <Col key={event.id} xs={24} sm={24} md={12} lg={6}>
             {" "}

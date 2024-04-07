@@ -1,9 +1,15 @@
 import { Button } from "antd";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 // eslint-disable-next-line react/prop-types
 const EventsAll = ({ event }) => {
-  const { name, location, description, date, img } = event;
+  const { id, name, location, date, img } = event;
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate(`/events/${id}`);
+  };
+
   return (
     <div style={{ backgroundColor: "#89CFF0", padding: "12px" }}>
       <img style={{ width: "100%", height: "300px" }} src={img} alt="#" />
@@ -15,9 +21,9 @@ const EventsAll = ({ event }) => {
         <p>{date}</p>
       </div>
       <div style={{ margin: "auto", textAlign: "center" }}>
-        <Link to="/events/:id">
-          <Button type="primary">See Details</Button>
-        </Link>
+        <Button onClick={handleClick} type="primary">
+          See Details
+        </Button>
       </div>
     </div>
   );

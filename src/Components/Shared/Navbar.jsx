@@ -7,6 +7,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../Pages/Home/Home";
 import Events from "../Pages/Events";
 import AddEvents from "../Pages/AddEvents";
+import EventDetails from "../Pages/EventDetails";
 
 const Navbar = () => {
   const [openMenu, setOpen] = useState(false);
@@ -92,6 +93,7 @@ function Content() {
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<Events />} />
         <Route path="/create-event" element={<AddEvents />} />
+        <Route path="/events/:id" element={<EventDetails />} />
       </Routes>
     </div>
   );
